@@ -1,0 +1,322 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+	<script src="/static/js/jquery.min.js"></script>
+	<script src="/static/js/bootstrap.min.js"></script>
+	<title>Profile</title>
+</head>
+<style type="text/css">
+/* latin */
+body {
+height: 100%;
+font-weight: 400;
+line-height: 1.4;
+background-color: rgba(0,0,0,0.07);
+}
+</style>
+<body>
+<style type="text/css">
+.parent-nav{
+background-color: #000000;
+}
+.top-nav{
+width:1000px;
+margin-left: calc((100% - 1000px)/2);
+margin-right: auto;
+background-color: #000000;
+}
+.nav-buttons{
+display: inline-flex;
+}
+.company-logo{
+display: inline-flex;
+height: inherit;
+width: auto;
+}
+.company-logo img{
+height: 45px;
+width:auto;
+}
+.contact{
+margin-left: 36%;
+margin-top: 15px;
+color: grey;
+}
+.contact:hover{
+color: white;
+}
+#wrapper {
+position: relative;
+margin-top: 5%;
+margin-bottom: 5px;
+margin-left: auto;
+margin-right: auto;
+width:1000px;
+overflow-x: hidden;
+overflow-y: hidden;
+}
+</style>
+
+<nav class="navbar navbar-inverse nav-fixed navbar-fixed-top">
+    <nav class="top-nav ">
+        <ul class="nav nav-buttons navbar-nav">
+            <li role = "presentation"><a href="/">Index</a></li>
+            <li role = "presentation"><a href="/profile">Profile</a></li>
+            <li role = "presentation"><a href="/rankings">Rankings</a></li>
+        </ul>
+    </nav>
+</nav>
+
+<div id="wrapper">
+<style type="text/css">	
+.info-container-row{
+display: -webkit-inline-flex;
+display: -ms-inline-flexbox;
+display: inline-flex;
+width: 100%;
+margin-bottom: 1%;
+}
+.info-container-row-block{
+display: -webkit-inline-flex;
+display: -ms-inline-flexbox;
+display: inline-flex;
+vertical-align: top;
+height: auto;
+width: 70.5%;
+margin:0.5%;
+margin-top: 0; 
+}
+.info-container-row-block img{
+height: 100%;
+width: 100%;
+}
+.info-container-row-block-img{
+display: -webkit-inline-flex;
+display: -ms-inline-flexbox;
+display: inline-flex;
+vertical-align: top;
+height: auto;
+width: 32%;
+margin:0.5%;
+margin-top: 0; 
+}
+.info-container-row-block-img img{
+height: 100%;
+width: 100%;
+}
+.info-container-row-block-container{
+display: block;
+width: 100%;
+}
+.info-container-row-block-container-header{
+display: block;
+font-weight: bold;
+font-size: 35px;
+text-align: left;
+width: 100%;
+}
+.info-container-row-block-container-desc{
+margin-top: 5%;
+display: block;
+font-size: large;
+text-align: left;
+width: 100%;
+}
+</style>
+<div class="info-container-row">
+	<div class="info-container-row-block-img">
+		<img src="/media/profile.jpg">
+	</div>
+	<div class="well info-container-row-block">
+		<div class="info-container-row-block-container">
+			<div class="info-container-row-block-container-header">
+				Manish Kumar
+			</div>
+			<div class="info-container-row-block-container-desc">
+				25 Years</br>
+				Left Handed Batsman</br>
+				Left Handed Medium Fast Bowler</br>
+			</div>
+		</div>
+	</div>
+</div>
+<style type="text/css">
+.experience-container-block{
+display: block;
+width: 100%;
+margin-bottom: 1%;
+}
+.experience-container-block-metrics{
+display: inline-bold;
+vertical-align: top;
+height: auto;
+width: 100%;
+margin:0.5%;
+margin-top: 0; 
+}
+.experience-container-block-metrics-header{
+display: inline-block;
+font-size: 20px;
+width: 100%;
+}
+.experience-container-block-metrics-factors{
+width: 60%;
+height: 100%;
+font-weight: bold;
+display: inline-block;
+text-align: left;
+vertical-align: top;
+}
+.experience-container-block-metrics-ratings{
+width: 38.8%;
+height: 100%;
+color: #e09a31;
+display: inline-block;
+text-align: right;
+vertical-align: top;
+}
+.experience-container-block-metrics-desc{
+margin-top: 2%;
+display: block;
+color: grey;
+font-size: large;
+text-align: left;
+width: 100%;
+}
+.experience-container-block-metrics-container{
+display: block;
+margin-top: 5%;
+}
+</style>
+<!-- EXPERIENCE DETAILS METRICS : START -->
+<div class="experience-container-block">
+	<!-- EXPERIENCE DETAILS METRICS CONTAINER : START -->
+	<div class="well experience-container-block-metrics">
+	<h2>Batting</h2>
+		<div class="experience-container-block-metrics-container">
+			<div class="experience-container-block-metrics-header">
+				<div class="experience-container-block-metrics-factors">Total Runs</div>
+				<div class="experience-container-block-metrics-ratings">597</div>
+			</div>
+			<div class="experience-container-block-metrics-desc">
+				Lower order batsman, scope of big innnings limited.
+			</div>
+		</div>
+		<div class="experience-container-block-metrics-container">
+			<div class="experience-container-block-metrics-header">
+				<div class="experience-container-block-metrics-factors">Average</div>
+				<div class="experience-container-block-metrics-ratings">42.08</div>
+			</div>
+			<div class="experience-container-block-metrics-desc">
+				Need to better at playing controlled shots to increase reliability.
+			</div>
+		</div>
+		<div class="experience-container-block-metrics-container">
+			<div class="experience-container-block-metrics-header">
+				<div class="experience-container-block-metrics-factors">Strike Rate</div>
+				<div class="experience-container-block-metrics-ratings">97.55</div>
+			</div>
+			<div class="experience-container-block-metrics-desc">
+				Looks good.
+			</div>
+		</div>
+		<div class="experience-container-block-metrics-container">
+			<div class="experience-container-block-metrics-header">
+				<div class="experience-container-block-metrics-factors">Highest Score</div>
+				<div class="experience-container-block-metrics-ratings">83*</div>
+			</div>
+			<div class="experience-container-block-metrics-desc">
+				Incredible innings. Have to replicate that calmness everytime.
+			</div>
+		</div>
+	</div>	
+	<!-- EXPERIENCE DETAILS METRICS CONTAINER : END -->	
+</div>
+
+<!-- EXPERIENCE DETAILS METRICS : START -->
+<div class="experience-container-block">
+	<!-- EXPERIENCE DETAILS METRICS CONTAINER : START -->
+	<div class="well experience-container-block-metrics">
+	<h2>Bowling</h2>
+		<div class="experience-container-block-metrics-container">
+			<div class="experience-container-block-metrics-header">
+				<div class="experience-container-block-metrics-factors">Overs</div>
+				<div class="experience-container-block-metrics-ratings">200</div>
+			</div>
+			<div class="experience-container-block-metrics-desc">
+				One of the best middle over bowlers
+			</div>
+		</div>
+		<div class="experience-container-block-metrics-container">
+			<div class="experience-container-block-metrics-header">
+				<div class="experience-container-block-metrics-factors">Economy Rate</div>
+				<div class="experience-container-block-metrics-ratings">4.14</div>
+			</div>
+			<div class="experience-container-block-metrics-desc">
+				Best in the team
+			</div>
+		</div>
+		<div class="experience-container-block-metrics-container">
+			<div class="experience-container-block-metrics-header">
+				<div class="experience-container-block-metrics-factors">Total Wickets</div>
+				<div class="experience-container-block-metrics-ratings">34</div>
+			</div>
+			<div class="experience-container-block-metrics-desc">
+				Have to work on full length deliveries more to get wickets.
+			</div>
+		</div>
+		<div class="experience-container-block-metrics-container">
+			<div class="experience-container-block-metrics-header">
+				<div class="experience-container-block-metrics-factors">Best figures</div>
+				<div class="experience-container-block-metrics-ratings">5-13</div>
+			</div>
+			<div class="experience-container-block-metrics-desc">
+				Mostly helped by a weak batting line up in the oppsite team
+			</div>
+		</div>
+	</div>	
+	<!-- EXPERIENCE DETAILS METRICS CONTAINER : END -->	
+</div>
+
+<br/><br/><h2>Recent Analysis</h2><br/>
+
+<div class="info-container">
+	<div class="info-container-row">
+		<div class="info-container-row-block">
+			<img src="/media/pull.jpg">
+		</div>
+		<div class="well info-container-row-block">
+			<div class="info-container-row-block-container">
+				<div class="info-container-row-block-container-header">
+					Pull Shots
+				</div>
+				<div class="info-container-row-block-container-desc">
+					Needs more power in the backfoot for a controlled jump.
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="info-container-row">
+		<div class="info-container-row-block">
+			<img src="/media/step.jpg">
+		</div>
+		<div class="well info-container-row-block">
+			<div class="info-container-row-block-container">
+				<div class="info-container-row-block-container-header">
+					Longer Steps
+				</div>
+				<div class="info-container-row-block-container-desc">
+					Should work on longer steps to increase the pace a
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+</div>	
+</body>
+</html>
